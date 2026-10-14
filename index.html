@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakaguchi | ホームページ</title>
+  <meta name="description" content="Sakaguchiの公式ホームページ。プロフィール、サービス、実績、お問い合わせ。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Sakaguchi</a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">プロフィール</a>
+        <a href="#services">サービス</a>
+        <a href="#works">実績</a>
+        <a href="#contact" class="btn btn-small">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Welcome</p>
+        <h1>アイデアを、<br>かたちにする。</h1>
+        <p class="lead">ここにキャッチコピーや自己紹介の一文を入れます。あなたが何をしているのか、訪問者に一言で伝えましょう。</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">お問い合わせ</a>
+          <a href="#works" class="btn btn-outline">実績を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about-photo" aria-hidden="true">S</div>
+        <div>
+          <h2>プロフィール</h2>
+          <p>はじめまして、Sakaguchiです。ここに経歴や活動内容、大切にしている考え方などを書きます。</p>
+          <p>趣味や好きなこと、これまでの経験など、人柄が伝わる内容を入れると親しみやすくなります。</p>
+          <ul class="facts">
+            <li><strong>拠点</strong>日本</li>
+            <li><strong>専門</strong>ここに専門分野</li>
+            <li><strong>連絡先</strong><a href="mailto:your-email@example.com">your-email@example.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <h2>サービス</h2>
+        <p class="section-lead">提供している内容をわかりやすく紹介します。</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">✦</div>
+            <h3>サービス 1</h3>
+            <p>サービスの説明文をここに入れます。どんな悩みを解決できるかを書きましょう。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">◆</div>
+            <h3>サービス 2</h3>
+            <p>サービスの説明文をここに入れます。特徴や強みを簡潔に伝えます。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">●</div>
+            <h3>サービス 3</h3>
+            <p>サービスの説明文をここに入れます。料金や流れへのリンクを置いても良いでしょう。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="container">
+        <h2>実績</h2>
+        <p class="section-lead">これまでの取り組みの一部をご紹介します。</p>
+        <div class="works">
+          <article class="work">
+            <div class="work-thumb thumb-1"></div>
+            <div class="work-body">
+              <h3>プロジェクト A</h3>
+              <p>概要や成果を一、二行で。</p>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work-thumb thumb-2"></div>
+            <div class="work-body">
+              <h3>プロジェクト B</h3>
+              <p>概要や成果を一、二行で。</p>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work-thumb thumb-3"></div>
+            <div class="work-body">
+              <h3>プロジェクト C</h3>
+              <p>概要や成果を一、二行で。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <h2>お問い合わせ</h2>
+        <p class="section-lead">ご相談・ご依頼はお気軽にどうぞ。</p>
+        <form class="contact-form" id="contact-form">
+          <label>お名前
+            <input type="text" name="name" required>
+          </label>
+          <label>メールアドレス
+            <input type="email" name="email" required>
+          </label>
+          <label>お問い合わせ内容
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">メールで送信</button>
+          <p class="form-note">送信ボタンを押すとメールソフトが開きます。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sakaguchi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
